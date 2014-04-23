@@ -17,8 +17,8 @@
 #
 
 from gimpfu import *
-import json
 import os
+import json
 import tempfile
 import urllib
 import urllib2
