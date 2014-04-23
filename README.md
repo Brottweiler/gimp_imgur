@@ -2,14 +2,16 @@ A very simple gimp plugin to upload the current image anonymously to imgur.
 
 I created this because I was tired of the seemingly needless steps of exporting the image, and then finding it again in a file browser, when all I really wanted to do was share what I was working on quickly.
 
+Requirements
+-------
+[pyperclip](http://coffeeghost.net/2010/10/09/pyperclip-a-cross-platform-clipboard-module-for-python/)
+
 Install
 -------
-Simply copy whichever files you want into your GIMP plug-in directoy.  Normally located in `\<GIMP Install\>/lib/gimp/2.0/plug-ins``.
 
-Some systems will also have a `~/.gimp/plug-ins` directory.
-
-Make sure that the files are executable.
-
+1. Download [pyperclip](http://coffeeghost.net/src/pyperclip.py) and place `pyperclip.py` under `Python/Lib/pyperclip.py`.
+2. Download the scripts and copy them to your GIMP plug-in directoy.
+3. Make sure that the files are executable.
 
 Usage
 -----
