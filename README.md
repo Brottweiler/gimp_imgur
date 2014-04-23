@@ -4,14 +4,16 @@ I created this because I was tired of the seemingly needless steps of exporting 
 
 Install
 -------
-Simply copy whichever files you want into your GIMP plug-in directoy.  Normally located in \<GIMP Install\>/lib/gimp/2.0/plug-ins  Some systems will also have a ~/.gimp/plug-ins directory.
+Simply copy whichever files you want into your GIMP plug-in directoy.  Normally located in `\<GIMP Install\>/lib/gimp/2.0/plug-ins``.
+
+Some systems will also have a `~/.gimp/plug-ins` directory.
 
 Make sure that the files are executable.
 
 
 Usage
 -----
-Entries will be added to the filter menu under the Imgur heading.  Both will create a temporary file in your systems temporary directory and then upload that .png directly to imgur.  After which your default web browser should open a new tab with the image in it.
+Entries will be added to the filter menu under the Imgur heading.  Both will create a temporary file in your systems temporary directory and then upload that .png directly to imgur.  After which the link will be copied to your clipboard.
 
 There is no support for deleting the image currently.
 
