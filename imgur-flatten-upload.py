@@ -24,6 +24,7 @@ import urllib
 import urllib2
 import webbrowser
 from base64 import b64encode
+import pyperclip
 
 
 def upload_to_imgur(image, layer):
@@ -56,7 +57,8 @@ def upload_to_imgur(image, layer):
         r = urllib2.Request(url, data, headers)
         response = json.loads(urllib2.urlopen(r).read())
         if(response['success']):
-            webbrowser.open(response['data']['link'])
+            pyperclip.copy(response['data']['link'])
+            gimp.message("Copied link to clipboard!")
         else:
             gimp.message(j1)
     except Exception as err:
