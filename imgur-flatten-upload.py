@@ -22,8 +22,8 @@ import os
 import tempfile
 import urllib
 import urllib2
-from base64 import b64encode
 import pyperclip
+from base64 import b64encode
 
 
 def upload_to_imgur(image, layer):
