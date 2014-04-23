@@ -22,7 +22,6 @@ import os
 import tempfile
 import urllib
 import urllib2
-import webbrowser
 from base64 import b64encode
 import pyperclip
 
