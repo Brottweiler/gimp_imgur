@@ -4,12 +4,13 @@ I created this because I was tired of the seemingly needless steps of exporting 
 
 Requirements
 -------
-[pyperclip](http://coffeeghost.net/2010/10/09/pyperclip-a-cross-platform-clipboard-module-for-python/)
+- [GNU Image Manipulation Program](http://gimp.org/)
+- [pyperclip](http://coffeeghost.net/2010/10/09/pyperclip-a-cross-platform-clipboard-module-for-python/)
 
 Install
 -------
 
-1. Download [pyperclip](http://coffeeghost.net/src/pyperclip.py) and place `pyperclip.py` under `Python/Lib/pyperclip.py`.
+1. Download [pyperclip.py](http://coffeeghost.net/src/pyperclip.py) and place `pyperclip.py` under `<GIMP install dir>\Python\Lib\pyperclip.py` on Windows, and under `/usr/lib/gimp/2.0/python/pyperclip.py` on GNU/Linux.
 2. Download the scripts and copy them to your GIMP plug-in directoy.
 3. Make sure that the files are executable.
 
