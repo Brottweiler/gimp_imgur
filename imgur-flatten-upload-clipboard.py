@@ -27,7 +27,7 @@ from base64 import b64encode
 
 
 def upload_to_imgur(image, layer):
-    ''' Flatten and then save as PNG file, and then uploads to imgur. 
+    ''' Flatten and then save as PNG file, and then uploads to imgur and copies to clipboard. 
     
     Parameters:
     image : image The current image.
@@ -64,13 +64,13 @@ def upload_to_imgur(image, layer):
         gimp.message("Unexpected error: " + str(err))
     
 register(
-    "imgur-flatten-upload",
+    "imgur-flatten-upload-clipboard",
     "Upload the current flattened image to imgur",
     "Flatten and then save as PNG file, and then uploads to imgur.",
     "JRU",
     "Open source (BSD 3-clause license)",
     "2013",
-    "<Image>/Filters/Imgur/Flatten and Upload",
+    "<Image>/Filters/Imgur/Flatten and Upload (Clipboard)",
     "*",
     [],
     [],

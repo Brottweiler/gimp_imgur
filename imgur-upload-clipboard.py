@@ -27,7 +27,7 @@ from base64 import b64encode
 
 
 def upload_to_imgur(image, layer):
-    ''' Save the current layer into a PNG file, and then uploads to imgur. 
+    ''' Save the current layer into a PNG file, and then uploads to imgur and copies to clipboard. 
     
     Parameters:
     image : image The current image.
@@ -64,13 +64,13 @@ def upload_to_imgur(image, layer):
         gimp.message("Unexpected error: " + str(err))
     
 register(
-    "imgur-upload",
+    "imgur-upload-clipboard",
     "Upload the current image to imgur",
     "Save the current layer into a PNG file, and then upload to imgur.",
     "JRU",
     "Open source (GPLv3)",
     "2013",
-    "<Image>/Filters/Imgur/Upload Current Layer",
+    "<Image>/Filters/Imgur/Upload Current Layer (Clipboard)",
     "*",
     [],
     [],
